@@ -7,11 +7,14 @@
     <title>My Portfolio</title>
     {#      fontawesome link#}
     <script src="https://kit.fontawesome.com/7427371865.js" crossorigin="anonymous"></script>
+    
+{% load static %}
+{# Main CSS #}
+<link rel="stylesheet" href="{% static 'style.css' %}"/>
+{# Mobile responsive #}
+<link rel="stylesheet" href="{% static 'media queries.css' %}"/>
 
-    {#   Main CSS #}
-    <link rel="stylesheet" href="style.css"/>
-    {#      Mobile responsive #}
-    <link rel="stylesheet" href="mediaqueries.css"/>
+
 </head>
 <body>
 {# NAVIGATION DESIGN #}
@@ -27,8 +30,10 @@
     </div>
 </nav>
 
+{# Home Section Design #}
 
-<script src="script.js"></script>
+
+<script src="../Home/static/script.js"></script>
 </body>
 
 </html>
