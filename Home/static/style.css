@@ -101,3 +101,23 @@ a:hover {
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open  {
+  max-height: 300px;
+}
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
