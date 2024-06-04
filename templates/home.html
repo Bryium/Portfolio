@@ -48,17 +48,17 @@
     </div>
 </nav>
 
-{#PROFILE#}
+{# PROFILE SECTION #}
 
+{% load static %}
 <section id="profile">
-    <div class="section_pic_container">
+    <div class="section_pic-container">
         <img src="{% static 'assets/profile-pic.jpg' %}" alt="Bryium Onyancha profile picture">
     </div>
     <div class="section_text">
         <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Bryium Onyancha</h1>
         <p class="section_text_p2">Software Engineer </p>
-        {% load static %}
         <div class="btn-container">
             <button class="btn btn-color-2" onclick="window.open('{% static 'assets/Resume.pdf' %}')">
                 Download CV
@@ -68,16 +68,17 @@
             </button>
         </div>
         <div id="socials-container">
-    <a href="https://www.linkedin.com/in/bryium/" target="_blank" aria-label="My LinkedIn profile">
-        <i class="fa-brands fa-linkedin"></i>
-        <a href="https://github.com/Bryium" target="_blank" aria-label="My Github profile">
-        <i class="fa-brands fa-github" style="color: #000000;"></i>
-        
-    </a>
-</div>
-
+            <a href="https://www.linkedin.com/in/bryium/" target="_blank" aria-label="My LinkedIn profile">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Bryium" target="_blank" aria-label="My Github profile">
+                <i class="fa-brands fa-github" style="color: #000000;"></i>
+            </a>
+        </div>
     </div>
 </section>
+
+
 <script src="{% static 'script.js' %}"></script>
 </body>
 
