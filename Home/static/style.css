@@ -158,7 +158,11 @@ padding-top: 4vh;
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
 
+.profile-pic {
+
+  border-radius: 2rem;
 }
 
 
@@ -247,14 +251,18 @@ padding-top: 4vh;
 
 #about {
   position: relative;
-  justify-content: center;
 
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+.section-container {
+  gap: 4rem;
+  width: 100%;
+}
+
+.section__pic-container {
+  margin: auto 0;
+  height: 400px;
+  width: 400px;
 }
 
 .about-details-container {
@@ -268,36 +276,35 @@ padding-top: 4vh;
 }
 
 .about-pic {
+  height: 375px;
+  width: 375px;
   border-radius: 2rem;
 }
 
-.fa-solid fa-angles-down {
-  position: absolute;
-  right: -15rem;
-  bottom: 2.5rem;
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .details-container {
-  padding: 1.5rem;
   flex: 1;
+  padding: 1.5rem;
   background: white;
   border-radius: 2rem;
   border: 0.1rem solid rgb(163, 163, 163);
   text-align: center;
 }
 
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.section__pic-container{
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.fa-solid.fa-angles-down {
+  position: absolute;
+  right: 1rem;
+  bottom: 2.5rem;
+  cursor: pointer;
+  z-index: 1000;
 }

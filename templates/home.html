@@ -53,7 +53,7 @@
 {% load static %}
 <section id="profile">
     <div class="section_pic-container">
-        <img src="{% static 'assets/profile-pic.jpg' %}" alt="Bryium Onyancha profile picture">
+        <img src="{% static 'assets/profile-pic.jpg' %}" alt="Bryium Onyancha profile picture" class="profile-pic">
     </div>
     <div class="section_text">
         <p class="section_text_p1">Hello, I'm</p>
@@ -122,17 +122,14 @@
           process. Additionally, my
           prowess extends to Android
           development, specializing
-            </p>
+        </p>
       </div>
     </div>
   </div>
-   <i class="fa-solid fa-angles-down" onclick="navigateToExperience()"></i>
-<script>
-  function navigateToExperience() {
-    window.location.href = './#experience';
+  <i class="fa-solid fa-angles-down" onclick="function navigateToExperience() {
+  
   }
-</script>
-
+  navigateToExperience()"></i>
 </section>
 <script src="{% static 'script.js' %}"></script>
 </body>
