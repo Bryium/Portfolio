@@ -80,47 +80,52 @@
 
 {# ABOUT SECTION #}
 <section id="about">
-  <p class="section_text_p1">Get To Know More</p>
-  <h1 class="title">About Me</h1>
-  <div class="section-container">
-    <div class="section__pic-container">
-      <img src="{% static 'assets/about-pic.jpg' %}" alt="profile picture" class="about-pic">
-    </div>
-    <div class="about-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <i class="fa-solid fa-award"></i>
-          <h3>Experience</h3>
-          <p>2+ years <br />Frontend Development</p>
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="{% static 'assets/about-pic.jpg' %}" alt="profile picture" class="about-pic">
         </div>
-        <div class="details-container">
-          <i class="fa-solid fa-user-graduate"></i>
-          <h3>Education</h3>
-          <p>Bachelors Degree<br />B.Sc. Information Technology</p>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>Experience</h3>
+                    <p>2+ years <br/>Frontend Development</p>
+                </div>
+                <div class="details-container">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h3>Education</h3>
+                    <p>Bachelors Degree<br/>B.Sc. Information Technology</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    As a proficient developer, I specialize in creating engaging and user-friendly
+                    web applications using HTML, CSS (with Tailwind CSS), and JavaScript,
+                    leveraging React for dynamic capabilities. My expertise extends to backend
+                    development with Node.js and Python, particularly Django, ensuring robust
+                    and scalable solutions. I excel in database management, API development,
+                    and Android development with Java, and I deliver high-quality cross-platform mobile apps using React
+                    Native with Expo and React Native CLI.
+                    Additionally, I utilize Selenium for web application testing within CI/CD
+                    pipelines. Driven by a passion for continuous learning, I am expanding my
+                    skills in machine learning and data science.
+                </p>
+            </div>
         </div>
-      </div>
-      <div class="text-container">
-        <p>
-          As a proficient developer, I specialize in creating engaging and user-friendly
-web applications using HTML, CSS (with Tailwind CSS), and JavaScript,
-leveraging React for dynamic capabilities. My expertise extends to backend
-development with Node.js and Python, particularly Django, ensuring robust
-and scalable solutions. I excel in database management, API development,
-and Android development with Java, and I deliver high-quality cross-platform mobile apps using React Native with Expo and React Native CLI.
-Additionally, I utilize Selenium for web application testing within CI/CD
-pipelines. Driven by a passion for continuous learning, I am expanding my
-skills in machine learning and data science.
-        </p>
-      </div>
     </div>
-  </div>
-  <i class="fa-solid fa-angles-down" style="color: #000000;" class="icon arrow" onclick="location.href='./#experience'"></i>
+    
+<i class="fa-solid fa-angles-down" style="color: #000000;" class="icon arrow"
+       onclick="location.href='./#experience'"></i>
+    
 </section>
 
 {# EXPERIENCE SECTION #}
+
 <section id="experience">
     <p class="section_text_p1">Explore My</p>
-    <hi class="title">Experience</hi>
+    <h1 class="title">Experience</h1>
     <div class="experience-details-container">
         <div class="about-containers">
             <div class="details-container">
@@ -219,8 +224,10 @@ skills in machine learning and data science.
             </div>
         </div>
     </div>
-    <i class="fa-solid fa-angles-down" style="color: #000000;" class="icon arrow" onclick="location.href='./#projects'"></i>
+    <i class="fa-solid fa-angles-down icon-arrow" style="color: #000000;" onclick="location.href='#projects'"></i>
 </section>
+
+
 <script src="{% static 'script.js' %}"></script>
 </body>
 
