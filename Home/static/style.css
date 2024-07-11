@@ -308,7 +308,6 @@ padding-top: 4vh;
 
 #experience {
   position: relative;
-
 }
 
 .experience-sub-title {
@@ -326,12 +325,11 @@ padding-top: 4vh;
 
 .article-container {
   display: flex;
+  flex-direction: column;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
-
 }
 
 .article {
@@ -344,4 +342,3 @@ padding-top: 4vh;
 .article.icon {
   cursor: default;
 }
-
