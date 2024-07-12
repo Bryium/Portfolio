@@ -325,7 +325,7 @@ padding-top: 4vh;
 
 .article-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: initial;
   flex-wrap: wrap;
   gap: 2.5rem;
