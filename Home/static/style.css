@@ -301,6 +301,7 @@ padding-top: 4vh;
   right: -5rem;
   bottom: 2.5rem;
   z-index: 1000;
+  cursor: pointer;
 }
 
 
