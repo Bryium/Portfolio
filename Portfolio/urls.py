@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from Home import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Home/', include('Home.urls')),  # Ensure your app name is 'home' and the path matches your folder structure
+    path('Home/', include('Home.urls')),
+    path('Home/<str:email>/', views.home, name='home_with_email')
 ]
