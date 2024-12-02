@@ -9,14 +9,14 @@
       }
     },
     {
-      "src": "static/**",
+      "src": "Home/static/**",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "dest": "Home/static/$1"
     },
     {
       "src": "/(.*)",
