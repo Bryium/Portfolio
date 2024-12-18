@@ -285,6 +285,7 @@ padding-top: 4vh;
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .details-container {
@@ -325,6 +326,8 @@ padding-top: 4vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+
 }
 
 .experience-container {
