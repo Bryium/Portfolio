@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-# Portfolio-2
-=======
-# Portfolio
-Welcome to my portfolio website! Built using Django, this website showcases my skills, projects, and experiences in an elegant and interactive manner
->>>>>>> origin/main
+Welcome to my portfolio! This collection highlights my journey as a full-stack developer, showcasing a variety of projects that demonstrate my skills in web and mobile app development. Using technologies such as Django, Node.js, React, and Tailwind CSS, I've created dynamic and user-friendly applications. Explore my work to see how I can bring your ideas to life!
