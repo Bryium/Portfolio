@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>My Portfolio</title>
+
+    {#      fontawesome link#}
+    <script src="https://kit.fontawesome.com/7427371865.js" crossorigin="anonymous"></script>
+
+    {% load static %}
+    {# Main CSS #}
+    <link rel="stylesheet" href="{% static 'style.css' %}"/>
+    {# Mobile responsive #}
+    <link rel="stylesheet" href="{% static 'media queries.css' %}"/>
+
+    {# favicon.ico #}
+    {% load static %}
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'site.webmanifest' %}">
+
+
+</head>
+<body>
+{# NAVIGATION DESIGN #}
+<nav id="nav-bar">
+    <div class="logo">Bryium Onyancha</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+{# HAMBURGER MENU #}
+<nav id="hamburger-nav">
+    <div class="logo">Bryium Onyancha</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+
+{# PROFILE SECTION #}
+
+{% load static %}
+<section id="profile">
+    <div class="section_pic-container">
+        <img src="{% static 'assets/Profile-pic 1.jpg' %}" alt="Bryium Onyancha profile picture" class="profile-pic">
+    </div>
+    <div class="section_text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">Bryium Onyancha</h1>
+        <p class="section_text_p2">Software Engineer </p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('{% static 'assets/Resume.pdf' %}')">
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+                Contact info
+            </button>
+        </div>
+        <div id="socials-container">
+            <a href="https://www.linkedin.com/in/bryium/" target="_blank" aria-label="My LinkedIn profile">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Bryium" target="_blank" aria-label="My Github profile">
+                <i class="fa-brands fa-github" style="color: #000000;"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+{# ABOUT SECTION #}
+<section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="{% static 'assets/about-pic.jpg' %}" alt="profile picture" class="about-pic">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <i class="fa-solid fa-award"></i>
+                    <h3>Experience</h3>
+                    <p>2+ years <br/>Software Development</p>
+                </div>
+                <div class="details-container">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h3>Education</h3>
+                    <p>Bachelors Degree<br/>B.Sc. Information Technology</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <ul style="padding: 0;">
+                    <li style="margin-bottom: 15px;">
+                        I build dynamic web apps with <strong>React</strong>, <strong>Node.js</strong>, and <strong>Django</strong>,
+                        backed by clean APIs and database magic.
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        On the mobile side, I’m fluent in <strong>Java</strong>, exploring <strong>Kotlin</strong>,
+                        and creating smooth cross-platform apps with <strong>React Native</strong>.
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        In the world of <strong>machine learning</strong>, I work with <strong>TensorFlow</strong>,
+                        <strong>JAX</strong>, and <strong>PyTorch</strong>, tackling <strong>Regression</strong>,
+                        <strong>Classification</strong>, <strong>Clustering</strong>, <strong>LLMs</strong>,
+                        <strong>LLVMs</strong>, and <strong>Audio Models</strong>. Whether it’s fine-tuning models or
+                        deploying them,
+                        I’m all about scalable, real-world solutions.
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        I containerize with <strong>Docker</strong> and test web apps with <strong>Selenium</strong>,
+                        ensuring everything runs like a dream in production.
+                    </li>
+
+                    <li style=" margin-bottom: 0;">
+                        <strong>Fun Fact:</strong> I Google and research better than most developers
+                        (because even the best devs need a good search engine).
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <i class="fa-solid fa-angles-down" style="color: #000000;" class="icon arrow"
+       onclick="location.href='./#experience'"></i>
+
+</section>
+{# EXPERIENCE SECTION #}
+<section id="experience">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="experience-container">
+                    <!-- Frontend development details -->
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>JAVASCRIPT</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>REACT</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>TYPESCRIPT</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>NEXT.JS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Backend Development</h2>
+                <div class="experience-container">
+                    <!-- Backend development details -->
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>PYTHON</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>NODE.JS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>DJANGO</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>JAVASCRIPT</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>DATABASES</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>REST APIs</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-sub-title">Android Development</h2>
+                <div class="experience-container">
+                    <!-- Android development details -->
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>ANDROID SDK</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>JAVA</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>REACT NATIVE</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>REACTIVE NATIVE CLI</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>VERSION CONTROL</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <i class="fa-solid fa-square-check" style="color: #000000;"></i>
+                        <div>
+                            <h3>FIREBASE</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <i class="fa-solid fa-angles-down icon-arrow" style="color: #000000;" onclick="location.href='#projects'"></i>
+</section>
+
+<section id="projects">
+    <p class="section_text_p1">Browse my Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/img.png' %}" alt="project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">KukuAfya Application</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/KukuAfya', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/KukuAfya', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/e-voting.png' %}" alt="project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Sikika E-voting App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/raymuthui/Sikika', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/raymuthui/Sikika', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/Browser-testing.png' %}" alt="project 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Browser Testing </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/Browser-Testing', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/Browser-Testing', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/Weather-App.png' %}" alt="project 4" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Weather App </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/WeatherApp', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/WeatherApp', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/logo.png' %}" alt="project 5" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Teleheal Website </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/Teleheal', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/Teleheal', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/F1-logo.png' %}" alt="project 6" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">F1 Chatbot </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/F1-Chatbot', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/F1-Chatbot', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/react + django.png' %}" alt="project 7" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">React-Django </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/React-Django', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/React-Django', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/machine-learning.jpg' %}" alt="project 8" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Machine Learning Models </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://colab.research.google.com/drive/1mJv4v5XLza3MfYSi4uKtAdWV3ATpz935?usp=sharing', '_blank')">
+                        Google Collab
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://colab.research.google.com/drive/1mJv4v5XLza3MfYSi4uKtAdWV3ATpz935?usp=sharing', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/Hura.jpg' %}" alt="project 9" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Hura Chatbot </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/HURA-Chatbot', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://hura-chatbot.vercel.app/', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/Nightingale.jpeg' %}" alt="project 10" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Nightingale AI </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/Nightingale-', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://nightingale-audrey.vercel.app', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="{% static 'assets/Valentine.jpg' %}" alt="project 11" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">ValentineVibe </h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://github.com/Bryium/ValentineVibe', '_blank')">
+                        Github
+                    </button>
+
+                    <button class="btn btn-color-2 project-btn"
+                            onclick="window.open('https://for-your-eyes-only.vercel.app/', '_blank')">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <i class="fa-solid fa-angles-down icon-arrow" ~style="color: #000000;" onclick="location.href='#contact'"></i>
+</section>
+
+<section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <i class="fa-solid fa-envelope" style="color: #000000;" class="icon contact-icon"></i>
+            <p><a href="mailto:bryiumonyancha@gmail.com">bryiumonyancha@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <i class="fa-brands fa-linkedin"></i>
+            <p><a href="https://www.linkedin.com/in/bryium/" class="icon container-icon">LinkedIn</a></p>
+        </div>
+    </div>
+
+</section>
+
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Bryium Onyancha. All Rights Reserved.</p>
+</footer>
+
+
+<script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>

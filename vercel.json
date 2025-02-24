@@ -1,0 +1,26 @@
+{
+  "builds": [
+    {
+      "src": "Portfolio/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python3.12"
+      }
+    },
+    {
+      "src": "Home/static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)",
+      "dest": "Home/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "Portfolio/wsgi.py"
+    }
+  ]
+}
